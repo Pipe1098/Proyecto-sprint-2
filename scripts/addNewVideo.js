@@ -8,10 +8,10 @@ const form = document.querySelector(".form");
 const valuesForm = Object.values(form);
 console.log(valuesForm);
 
-//-------Reutilizar el mismo formulario para editar la información de un personaje---
+//-------Reutilizar el mismo formulario para editar la información de un video---
 
-const editFormStr = sessionStorage.getItem("editPersonaje")
-  ? JSON.parse(sessionStorage.getItem("editPersonaje"))
+const editFormStr = sessionStorage.getItem("editVideo")
+  ? JSON.parse(sessionStorage.getItem("editVideo"))
   : "";
 
 const editForm = editFormStr ? parseInt(editFormStr) : null;
@@ -46,6 +46,7 @@ botonSubmit.innerHTML = editForm ? "Guardar cambios" : "Guardar video";
 if (editForm && !editVideo) {
   Swal.fire("¡No hayamos datos!", "Por favor regrese al home", "info").then(
     () => {
+      //../index.html
       window.location.href = "../index.html";
     }
   );
@@ -100,15 +101,15 @@ form.addEventListener("submit", (event) => {
 
   console.log(videos);
 
-  //Actualizar la información de personajes que tenemos en sessionStorage
+  //Actualizar la información de videos que tenemos en sessionStorage
   sessionStorage.setItem("videos", JSON.stringify(videos));
 
-  // //Limpiar cada campo del formulaio
-  // valuesForm.forEach((input) => {
-  //   if (input.id) {
-  //     input.value = "";
-  //   }
-  // });
+  //Limpiar cada campo del formulaio
+  valuesForm.forEach((input) => {
+    if (input.id) {
+      input.value = "";
+    }
+  });
 
   Swal.fire(
     "¡Excelente!",
