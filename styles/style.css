@@ -1,0 +1,246 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/wallpapersden.com_death-star-hd-star-wars_2560x1440.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Unbounded', cursive;
+}
+
+.header{
+    text-align: center;
+    color: yellow;
+    padding-top: 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    color: yellow;
+}
+
+#contenedorCards{
+    display: flex;
+    /* padding: 30px; 
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main__card{
+    width: 300px;
+    height: 450px;
+    position: relative;
+    color: yellow;
+}
+
+.card__image{
+    width: 100%;
+    height: 100%;
+}
+
+.card__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card__name{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    padding: 10px 5px;
+}
+
+.main__card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transform: scale(1.1);
+}
+
+.main__filtros{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.main__filtros button{
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: 'Unbounded', cursive;
+    border: 2px solid black;
+    background-color: yellow;
+}
+
+.main__filtros button:hover{
+    color: yellow;
+    border: 2px solid yellow;
+    background-color: black;
+    cursor: pointer;
+}
+
+.card__delete, .card__edit{
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    display: none;
+    padding: 5px;
+}
+
+.card__delete:hover, .card__edit:hover{
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.main__card:hover .card__delete, .main__card:hover .card__edit{
+    display: block;
+}
+
+.card__edit{
+    top: 35px;
+    transform: rotate(45deg);
+    color: yellow;
+}
+
+.card__edit:hover{
+    transform: rotate(45deg) scale(0.8);
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    /*background-image: url('../images/wallpapersden.com_death-star-hd-star-wars_2560x1440.jpg');*/
+    background-color: rgb(22, 24, 22);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Unbounded', cursive;
+}
+
+.header{
+    text-align: center;
+    color: rgb(10, 10, 8);
+    padding-top: 20px;
+    padding-left: 90px;
+    margin-right: 40px;
+    
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    color: rgb(5, 5, 5);
+}
+
+#contenedorCards{
+    display: flex;
+    /* padding: 30px; */
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main__card{
+    width: 300px;
+    height: 500px;
+    position: relative;
+    color: rgb(23, 3, 68);
+}
+
+.card__image{
+    width: 100%;
+    height: 80%;
+}
+
+.card__image img{
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    object-position: top;
+    margin: left 60px; ;
+}
+
+.card__name{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    padding: 10px 20px;
+}
+
+.main__card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transform: scale(1.1);
+}
+
+.main__filtros{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.main__filtros button{
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: 'Unbounded', cursive;
+    border: 2px solid black;
+    background-color: rgb(49, 39, 160);
+}
+
+.main__filtros button:hover{
+    color: rgb(19, 19, 8);
+    border: 2px solid rgb(14, 14, 13);
+    background-color: rgb(34, 3, 3);
+    cursor: pointer;
+}
+
+.card_delete, .card_edit{
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    display: none;
+    padding: 5px;
+}
+
+.card_delete:hover, .card_edit:hover{
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.main_card:hover .carddelete, .maincard:hover .card_edit{
+    display: block;
+}
+
+.card__edit{
+    top: 35px;
+    transform: rotate(45deg);
+    color: rgb(20, 20, 7);
+}
+
+.card__edit:hover{
+    transform: rotate(45deg) scale(0.8);
+}

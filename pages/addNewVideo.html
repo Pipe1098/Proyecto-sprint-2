@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/addNewVideo.css">
+    <title>Sesión 8 Formularios</title>
+</head>
+
+<body>
+    <h1 class="title">Agregar nuevo video</h1>
+    <h2 class="subtitle"><a href="../index.html">Regresar a Home</a></h2>
+    <form class="form">
+
+        <label for="titulo">Titulo</label>
+        <input id='titulo' type="text" placeholder="Digite aquí el titulo del video">
+
+        <label for="info">Información</label>
+        <input id='info' type="text">
+
+        <label for="categoria">Categoria</label>
+        <select id="categoria">
+            <option value="noticias">Noticias</option>
+            <option value="deportes">Deportes</option>
+            <option value="lifehacks">Life Hacks</option>
+        </select>
+
+        <label for="link">Imagen</label>
+        <input id='link' type="url">
+
+        <button type="submit">Enviar</button>
+
+    </form>
+    <script src="../scripts/addNewVideo.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

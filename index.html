@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Sesión 7 eventos del DOM</title>
+</head>
+
+<body>
+  <header class="header">
+    <!-- <h1 class="header__title">Eventos del DOM</h1> -->
+    <figure class="header__image">
+      <img src="./images/logo.png"
+        alt="Star_Wars_Logo">
+    </figure>
+    <h2 class="header__subtitle">Videos youtube</h2>
+    <h3><a href="./pages/addNewVideo.html">Agregar nuevo Video</a></h3>
+  </header>
+  <main class="main">
+    <section class="main__filtros">
+      <h2 class="main__subtitle">Filtrar por:</h2>
+      <button id="all">Todos</button>
+      <button id="noticias">Noticias</button>
+      <button id="deportes">Deportes</button>
+      <button id="lifehacks">Life Hacks</button>
+    </section>
+    <section id="contenedorCards">
+      <article class="main__card">
+        <figure class="card__image">
+          <img src="https://static.wikia.nocookie.net/esstarwars/images/f/ff/Leia_photomasher.jpg" alt="name">
+        </figure>
+        <h4 class="card__name">Luke Skywalker</h4>
+      </article>
+    </section>
+  </main>
+  <script src="./scripts/script.js" type="module"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
